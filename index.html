@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html >
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<meta http-equiv="Content-Security-Policy"
+	content="default-src * 'unsafe-eval' https://ajax.googleapis.com/ 'unsafe-inline'">
+<meta charset="ISO-8859-1">
+<title>Star Wars App</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.1.0/jasmine.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.1.0/jasmine-html.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.1.0/boot.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-mocks/1.6.9/angular-mocks.min.js"></script>
+ 
+</head>
+<body ng-app="AngularApp" ng-cloak class="ng-cloak">
+
+	<div class="container-fluid ">
+		<nav id="myNavbar"
+			class=" navbar-default navbar-fixed-top navbar-style "
+			role="navigation">
+			<div class="container ">
+				<div class="navbar-header ">
+
+
+					<a class="navbar-brand" ui-sref="home"><span class="top-15 "><strong>Star Wars</strong></span></a>
+
+				</div>
+				
+
+			</div>
+		</nav>
+	</div>
+	<div ng-view class="container-fluid bg-image ">
+		<div ui-view class=""></div>
+	</div>
+	
+	
+
+	<script src="app.js"></script>
+	<script src="controllers/mainController.js"></script>
+	
+    <script src="service/swapiService.js"></script>
+    <script src="tests/controllerTests.js"></script>
+
+</body>
+</html>
